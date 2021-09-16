@@ -29,3 +29,6 @@ Route::resource('posts',PostController::class);
 //});
 Route::get('firstpage',[PostController::class,'disp']);
 
+Route:: get('/file2',function() {
+    return view('posts/file1/file2/file2');
+});

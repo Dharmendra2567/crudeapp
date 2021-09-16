@@ -84,7 +84,7 @@
     </div>
     
   
-<table border="2,dotted">
+<table border="2">
   <tr>
   <th width="70px">S.N</th>
   <th width="200px">Subjects</th>
@@ -442,8 +442,13 @@
     {
     echo " PASS";
 }
-    else{
+    else if(($post->eng <=40) && ($post->nep <=40) && ($post->phy <=40) && ($post->chem <=40) && ($post->net <=40) && ($post->math <=40) && ($post->pro <=40))
+    {
     echo "FAIL";
+    }
+    else 
+    {
+      echo "FAIL";
     }
     
     @endphp
